@@ -53,7 +53,6 @@ def PartTwo():
     for line in lines:
         splits = line.split()
         result += GameCalc(splits[0], splits[1])
-        print(f"enemie: {splits[0]} | status: {splits[1]} result: {result}")
     print(f"PartTwo: {result}")
     
 PartOne()
