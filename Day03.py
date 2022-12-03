@@ -1,14 +1,13 @@
 #PartOne
 def findDifference(partOne, partTwo) -> int:
-    for element in str(partOne):
-        foundNumber = str(partTwo).find(element)
-        if(foundNumber > -1):
+    for element in partOne:
+        if(partTwo.find(element) >= 0):
             return PriorityCalc(element)
 
 #PartTwo
 def findBadge(partOne, partTwo, partThree) -> int:
-    for element in str(partOne):
-        if (str(partTwo).find(element) >= 0 and str(partThree).find(element) >= 0):
+    for element in partOne:
+        if (partTwo.find(element) >= 0 and partThree.find(element) >= 0):
             return PriorityCalc(element)
 
 def PriorityCalc(letter) -> int:
